@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdlib.h>
 /**
  * addnode - add node to the head stack first
  * @head: head of the stack
@@ -12,7 +13,7 @@ void addnode(stack_t **head, int n)
     if (new_node == NULL)
     {
         fprintf(stderr, "Error: Failed to allocate memory for new node\n");
-        exit(EXIT_FAILURE);
+	exit(EXIT_FAILURE);
     }
 
     new_node->n = n;

@@ -1,4 +1,5 @@
 #include "monty.h"
+#include <stdlib.h>
 /**
  * f_div - divides the top two elements of the stack first .
  * @head: stack head
